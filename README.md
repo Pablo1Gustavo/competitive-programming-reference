@@ -3,12 +3,12 @@
 
 ## Instructions to add a code reference
 
-* Identifique a melhor categoria (pasta) em que o problema se encaixe.
-* Adicione o arquivo com o nome em **snake_case**.
-* Escolha a linguagem python ou cpp, podendo ser ambas ao mesmo tempo (neste caso ambos arquivos com mesmo nome mudando somente a extensao).
-* Adicione a primeira linha de comentário com o título, as próximas com uma breve descrição, observações e por fim a complexidade (de tempo e se pertinente a de espaço).
-* Para o arquivo final em C++ considere já importado a `<bits/stdc++.h>`.
-* Foque na legibilidade. Opte por seguir boas práticas de Clean Code, com nomes descritios para variaveis, funcoes e estruturas, uso do **snake_case**, separação adequada em funções e variaveis.
-* Certifique-se de testar o seu código, de preferencia em problemas reais.
-* Caso preciso você pode referenciar um outro código, para considerar "importado" alguma funcao ou estrutura feita previamente.
-
+- Use english.
+- Identify the best category (folder) where the problem fits.
+- Add the file with a name in **snake_case**.
+- Choose the language: Python or C++, or both (in this case, both files should have the same name, changing only the extension).
+- Add the first line of the comment with the title, followed by a brief description, observations, and finally, the complexity (time and, if relevant, space complexity).
+- For the final file in C++, consider `<bits/stdc++.h>` already imported.
+- Focus on readability. Follow good Clean Code practices, with descriptive names for variables, functions, and structures, using **snake_case**, and proper separation into functions and variables.
+- Make sure to test your code, preferably on real problems.
+- If necessary, you can reference another code to consider a function or structure previously "imported."
