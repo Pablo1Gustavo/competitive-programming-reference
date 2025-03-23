@@ -3,14 +3,16 @@
  * Time: $O(\log (\max{(a,b)}))$
  * Status: Tested
  */
-
 #pragma once
-
 #include "./extended_euclidean.h"
 
-int mod_inv(int a, int m) {
-  int x,y;
-  int gcd = extended_euclidean(a,m,x,y);
-  if (gcd != 1) return -1;
-  else return (x % m + m) % m;
+int mod_inv(int a, int m)
+{
+    int x, y;
+    int gcd = extended_euclidean(a, m, x, y);
+    if (gcd != 1)
+    {
+        return -1;
+    }
+    return (x % m + m) % m;
 }

@@ -1,6 +1,11 @@
 // Minimal Enclosing Circle
 // Finds the smallest possible circle that encloses a set of points on a plane
 // Complexity O(n)
+#pragma once
+#include <math.h>
+#include <vector>
+#include <algorithm>
+using namespace std;
 #define double long double
 
 struct Point
@@ -22,7 +27,6 @@ bool is_inside(Circle c, Point p)
     return dist(c.c, p) <= c.r;
 }
 
-
 Circle circle_from(Point a, Point b, Point c)
 {
     double bx = b.x - a.x;
@@ -36,8 +40,7 @@ Circle circle_from(Point a, Point b, Point c)
 
     Point center = {
         (cy * bv - by * cv) / (2 * d),
-        (bx * cv - cx * bv) / (2 * d)
-    };
+        (bx * cv - cx * bv) / (2 * d)};
     center.x += a.x;
     center.y += a.y;
 
@@ -56,7 +59,8 @@ bool is_valid_circle(Circle c, vector<Point> ps)
 {
     for (auto p : ps)
     {
-        if (!is_inside(c, p)) {
+        if (!is_inside(c, p))
+        {
             return false;
         }
     }
@@ -65,13 +69,16 @@ bool is_valid_circle(Circle c, vector<Point> ps)
 
 Circle min_circle_trivial(vector<Point> ps)
 {
-    if (ps.empty()) {
+    if (ps.empty())
+    {
         return {{0, 0}, 0};
     }
-    if (ps.size() == 1) {
+    if (ps.size() == 1)
+    {
         return {ps[0], 0};
     }
-    if (ps.size() == 2) {
+    if (ps.size() == 2)
+    {
         return circle_from(ps[0], ps[1]);
     };
 
