@@ -1,4 +1,4 @@
-from fft import fft
+from .fft import fft
 
 def multiply(poly1: list[int], poly2: list[int]) -> list[int]:
     n = 1
