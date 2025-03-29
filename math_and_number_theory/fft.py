@@ -1,3 +1,10 @@
+"""
+Description: In-place Fast Fourier Transform (FFT) implementation using complex numbers.
+Time complexity: O(n log n)
+Space complexity: O(1) auxiliary (modifies input in-place)
+Where n = len(a)
+"""
+
 import cmath
 
 def bit_reverse_copy(a: list[complex]) -> None:

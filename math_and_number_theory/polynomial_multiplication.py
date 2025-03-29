@@ -1,3 +1,10 @@
+"""
+Description: Multiply two polynomials using FFT-based convolution.
+Time complexity: O(n log n)
+Space complexity: O(n)
+Where n = len(poly1) + len(poly2)
+"""
+
 from .fft import fft
 
 def multiply(poly1: list[int], poly2: list[int]) -> list[int]:
