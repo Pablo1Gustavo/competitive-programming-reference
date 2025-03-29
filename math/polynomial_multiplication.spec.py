@@ -1,5 +1,5 @@
 import unittest
-from fft import *
+from polynomial_multiplication import multiply
 
 class TestPolynomialMultiplication(unittest.TestCase):
     def test_very_basic(self):
